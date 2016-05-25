@@ -23,6 +23,7 @@ void LinkedList::addNode(string addData) {
         while(current->next != NULL){
             current= current->next;
         }
+        n->posc = current->posc+1;
         current->next=n;
     }
     else{
@@ -62,3 +63,18 @@ void LinkedList::PrintList() {
 
 }
 
+string LinkedList::getNodeString(int x){
+	current=head;
+	while(current != NULL){
+		if (current->posc == x){
+			cout<<current->data<<endl;
+			return current->data;
+		}
+		else{
+			current=current->next;
+		}
+	}
+	cout<<"Posicion fuera de la lista"<<endl;
+	return "Posicion fuera de la lista";
+
+}
