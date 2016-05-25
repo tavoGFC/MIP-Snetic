@@ -26,6 +26,7 @@ private:
 public:
 	InstructionDecoder();
 	string decode(string binaryCode);
+	string docodeRegister(string binaryResgisters);
 	virtual ~InstructionDecoder();
 };
 
