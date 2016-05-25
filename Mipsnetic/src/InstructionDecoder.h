@@ -11,6 +11,8 @@
 #include <string>
 #include<iostream>
 
+#include "Convertir.h"
+
 using namespace std;
 
 class InstructionDecoder {
@@ -18,6 +20,8 @@ private:
 	string decode_R(string binaryCode);
 	string decode_I(string binaryCode);
 	string decode_J(string binaryCode);
+
+	Convertir conversor;
 
 public:
 	InstructionDecoder();

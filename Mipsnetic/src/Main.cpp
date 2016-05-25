@@ -10,13 +10,14 @@
 #include <fstream>
 #include <string>
 #include "Lector.h"
+#include "InstructionDecoder.h"
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-	Lector l;
-	l.parsear("af");
-    return 0;
+
+
+
 }
 

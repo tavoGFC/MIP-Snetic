@@ -16,15 +16,21 @@ string InstructionDecoder :: decode(string binaryCode){
 	string firstSix;
 	firstSix=binaryCode.substr(0,6);
 	int decimalFirstSix;
-	decimalFirstSix=funcion binario a decimal (firstSix);
+	decimalFirstSix=this->conversor.convertirBinario(firstSix);
 	if (decimalFirstSix==0){
-		return this->decode_R(binaryCode);
+		cout<<"TIPO R"<<endl;
+		return "Tipo R";
+		//return this->decode_R(binaryCode);
 	}
 	if (decimalFirstSix==2 or decimalFirstSix==3){
-			return this->decode_J(binaryCode);
+		cout<<"TIPO J"<<endl;
+		return "Tipo J";
+		//return this->decode_J(binaryCode);
 		}
 	else{
-		return this->decode_I(binaryCode);
+		cout<<"TIPO I"<<endl;
+		return "Tipo I";
+		//return this->decode_I(binaryCode);
 	}
 }
 
