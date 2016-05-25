@@ -35,15 +35,60 @@ string InstructionDecoder :: decode(string binaryCode){
 }
 
 string InstructionDecoder :: decode_R(string binaryCode){
-
+	if (binaryCode=="100000"){
+			return "+";
+		}
+		if (binaryCode=="011010"){
+			return "/";
+		}
+		if (binaryCode=="100010"){
+			return "-";
+		}
+		if (binaryCode=="100110"){
+			return "XOR";
+		}
+		if (binaryCode=="101010"){
+				return "slt";
+		}
+		if (binaryCode=="011000"){
+			return "*";
+		}
+		if (binaryCode=="010010"){
+			return "mflo";
+		}
+		if (binaryCode=="100110"){
+			return "syscall";
+		}
+		else{
+			return 0;
+		}
 }
 
 string InstructionDecoder :: decode_I(string binaryCode){
-
+	if (binaryCode=="001000"){
+			return "+";
+		}
+		if (binaryCode=="000100"){
+			return "beq";
+		}
+		if (binaryCode=="100110"){
+			return "syscall";
+		}
+		else{
+			return 0;
+		}
 }
 
 string InstructionDecoder :: decode_J(string binaryCode){
-
+	if (binaryCode=="000010"){
+			return "j";
+		}
+		if (binaryCode=="000011"){
+			return "jal";
+		}
+		else{
+			return 0;
+		}
 }
 
 InstructionDecoder::~InstructionDecoder() {
