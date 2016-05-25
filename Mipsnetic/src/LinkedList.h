@@ -19,6 +19,8 @@ private:
     typedef struct node{
         string data;
         node* next;
+        //-----------
+        int posc=0;
     }* nodePtr;
 
     nodePtr head;
@@ -30,6 +32,8 @@ public:
     void addNode(string addData);
     void deleteNode(string delData);
     void PrintList();
+    //-------------------------------
+    string getNodeString(int x);
 
 };
 
