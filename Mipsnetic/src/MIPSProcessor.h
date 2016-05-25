@@ -11,11 +11,16 @@
 
 #include <iostream>
 #include <stdlib.h>
-
+#include "Lector.h"
+#include "InstructionDecoder.h"
 
 using namespace std;
 
 class MIPSProcessor {
+    
+private:
+	Lector lector;
+	InstructionDecoder decodificador;
 public:
     MIPSProcessor();
     virtual ~MIPSProcessor();
