@@ -21,7 +21,7 @@ int main(char operacion[])
 	   return "/";
    }
    if (operacion=="100000"){
-	   return "/+";
+	   return "+";
    }
    if (operacion=="100001"){
 	   return "+";
@@ -33,19 +33,19 @@ int main(char operacion[])
 	   return "XOR";
    }
    if (operacion=="101010"){
-	   return "/slt";
+	   return "slt";
    }
    if (operacion=="011000"){
 	   return "*";
    }
    if (operacion=="010010"){
-	   return "/mflo";
+	   return "mflo";
    }
    if (operacion=="000010"){
-	   return "/j";
+	   return "j";
    }
    if (operacion=="100110"){
-	   return "/syscall";
+	   return "syscall";
    }
    else{
 	   return 0;
